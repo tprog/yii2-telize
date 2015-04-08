@@ -2,6 +2,7 @@
     "name": "tprog/yii2-telize",
     "description": "Get location by IP address use telize API",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Artem Bondarenko",
