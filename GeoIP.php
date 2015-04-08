@@ -3,7 +3,7 @@
  * GeoIP.php
  * @author Artem Bondarenko taxist0@gmail.com
  */
-namespace tprog\yii\telize;
+namespace tprog\telize;
 
 class GeoIP extends \yii\base\Component
 {
