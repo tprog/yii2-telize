@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tprog\\Yii2\\telize\\": "/"
+            "tprog\\yii2-telize\\": ""
         }
     },
     "extra": { 
