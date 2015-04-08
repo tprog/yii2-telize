@@ -9,7 +9,7 @@ Add in `composer.json`:
 ```
 {
     "require": {
-        "tprog/yii2-telize": "*"
+        "tprog/yii2-telize": "*@dev"
     }
 }
 ```
@@ -24,5 +24,5 @@ use tprog\telize\GeoIP;
 
 $GeoIP = new GeoIP();
 
-vardump ($GeoIP);
+vardump ($GeoIP->request());
 ```
