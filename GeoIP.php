@@ -5,7 +5,7 @@
  */
 namespace tprog\telize;
 
-use linslin\yii2\curl;
+use wenbin1989\yii2\curl;
 
 
 class GeoIP extends \yii\base\Component

@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-	"linslin/yii2-curl": "*"
+	"wenbin1989/yii2-curl": "dev-master"
     },
     "require-dev": {
     },
