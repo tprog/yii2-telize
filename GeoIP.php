@@ -11,6 +11,7 @@ use wenbin1989\yii2\curl;
 class GeoIP extends \yii\base\Component
 {
     protected $url;
+    protected $result;
 
     public function __construct($url = 'http://www.telize.com/geoip/')
     {
@@ -21,9 +22,17 @@ class GeoIP extends \yii\base\Component
     {
         $ip = $ip ? $ip : $_SERVER['REMOTE_ADDR'];
         $curl = new curl\Curl();
-        $result = $curl->get($this->url . $ip);
 
-        return json_decode($result);
+        $this->result = json_decode($curl->get($this->url . $ip));
+
+        return $this->result;
+    }
+
+    public function __get($name){
+        if (isset($this->result->$name)){
+            return $this->result->$name;
+        }
+        return false;
     }
 
 

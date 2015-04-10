@@ -24,5 +24,18 @@ use tprog\telize\GeoIP;
 
 $GeoIP = new GeoIP();
 
-vardump ($GeoIP->request());
+$GeoIP->request();
+
+echo $GeoIP->longitude;
+echo $GeoIP->latitude;
+echo $GeoIP->continent_code;
+echo $GeoIP->city;
+echo $GeoIP->timezone;
+echo $GeoIP->region;
+echo $GeoIP->country_code;
+echo $GeoIP->isp;
+echo $GeoIP->country_code3;
+echo $GeoIP->country;
+echo $GeoIP->region_code;
+
 ```
